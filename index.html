@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ma présentation</title>
+    <style>
+      body {
+        background-color: lightblue;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+      }
+
+      body.sombre {
+        background-color: #1e1e2f;
+        color: white;
+      }
+
+      .carte {
+        background-color: white;
+        color: black;
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        color: darkblue;
+      }
+
+      body.sombre h1 {
+        color: orange;
+      }
+
+      button {
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        background-color: orange;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="changerMode()">Mode sombre 🌙</button>
+
+    <h1>Salut, brice tresor ...</h1>
+
+    <div class="carte">
+      <h2>À propos de moi</h2>
+      <p>Je suis étudiant en développement web.</p>
+    </div>
+
+    <div class="carte">
+      <h2>Ce que j'apprends</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+
+    <script>
+      function changerMode() {
+        document.body.classList.toggle("sombre");
+      }
+    </script>
+  </body>
+</html>
